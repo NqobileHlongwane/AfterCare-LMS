@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    background: #0074D9;
+    color: #fff;
+    padding: 16px;
+    margin: 0 0 20px 0;
+}
+nav {
+    margin-bottom: 20px;
+}
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    max-width: 350px;
+    margin: 20px auto;
+}
+input, select, button {
+    margin: 8px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+ul {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+li {
+    margin-bottom: 10px;
+}
