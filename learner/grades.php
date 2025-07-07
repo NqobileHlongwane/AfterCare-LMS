@@ -48,7 +48,6 @@ while ($row = $result->fetch_assoc()) {
 <body>
     <div class="navbar">Online Learning Management System</div>
     <div class="container">
-        <a class="back-link" href="dashboard.php">&larr; Back to Dashboard</a>
         <h2>Your Grades & Feedback</h2>
         <div class="grade-list">
             <?php if ($grades): ?>

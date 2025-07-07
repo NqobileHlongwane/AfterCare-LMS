@@ -15,7 +15,42 @@ $name = $_SESSION['name'];
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Roboto', Arial, sans-serif; background: linear-gradient(120deg, #e0e7ff 0%, #f8fafc 100%); margin: 0; min-height: 100vh; }
-        .navbar { background: #1e293b; color: #fff; padding: 16px 0; text-align: center; font-size: 1.3rem; letter-spacing: 1px; margin-bottom: 40px; box-shadow: 0 2px 8px rgba(30,41,59,0.08); }
+        .navbar {
+            background: #1e293b;
+            color: #fff;
+            padding: 16px 0;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 8px rgba(30,41,59,0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            position: absolute;
+            left: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+        }
+        .navbar-logo img {
+            max-height: 36px;
+            width: auto;
+            background: #fff;
+            padding: 2px 8px;
+            border-radius: 7px;
+            box-shadow: 0 2px 8px rgba(30,41,59,0.10);
+        }
+        .navbar-title {
+            font-weight: 700;
+            color: #fff;
+            margin: 0 auto;
+        }
         .container { max-width: 600px; margin: 40px auto; background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(30,41,59,0.10); padding: 32px 28px 24px 28px; }
         .logout-link { text-align: right; margin-bottom: 10px; }
         .logout-link a { color: #6366f1; text-decoration: none; font-weight: 500; }
@@ -32,7 +67,12 @@ $name = $_SESSION['name'];
     </style>
 </head>
 <body>
-    <div class="navbar">Online Learning Management System</div>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="/LMS/logo/aftercare-logo.jpg" alt="AfterCare LMS Logo">
+        </div>
+        <span class="navbar-title">Online Learning Management System</span>
+    </div>
     <div class="container">
         <div class="welcome">Welcome, <?php echo htmlspecialchars($name); ?></div>
         <div class="logout-link">

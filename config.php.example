@@ -1,0 +1,10 @@
+<?php
+// Copy this file to config.php and update your database credentials
+$host = 'localhost';
+$user = 'root';
+$password = '';
+$db = 'lms_db';
+$conn = new mysqli($host, $user, $password, $db);
+if ($conn->connect_error) {
+    die('Connection failed: ' . $conn->connect_error);
+}

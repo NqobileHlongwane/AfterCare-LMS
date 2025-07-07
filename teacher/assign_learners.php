@@ -65,8 +65,6 @@ if ($selected_group_id) {
         .container { max-width: 700px; margin: 40px auto; background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(30,41,59,0.10); padding: 32px 28px 24px 28px; }
         h2 { color: #1e293b; text-align: center; font-weight: 700; }
         .navbar { background: #1e293b; color: #fff; padding: 16px 0; text-align: center; font-size: 1.3rem; letter-spacing: 1px; margin-bottom: 40px; box-shadow: 0 2px 8px rgba(30,41,59,0.08); }
-        .back-link { margin-bottom: 18px; display: block; color: #6366f1; text-decoration: none; font-weight: 500; }
-        .back-link:hover { text-decoration: underline; }
         .group-select { margin-bottom: 24px; }
         .learners-list { max-height: 320px; overflow-y: auto; border: 1px solid #cbd5e1; border-radius: 8px; padding: 12px; background: #f1f5f9; }
         .learner-item { margin-bottom: 10px; display: flex; align-items: center; }
@@ -79,7 +77,6 @@ if ($selected_group_id) {
 <body>
     <div class="navbar">Online Learning Management System</div>
     <div class="container">
-        <a class="back-link" href="teacher_dashboard.php">&larr; Back to Dashboard</a>
         <h2>Assign Learners to Groups</h2>
         <?php if (isset($_GET['success'])): ?>
             <div class="success-msg">Learner assignments updated!</div>

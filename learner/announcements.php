@@ -78,7 +78,6 @@ if (!empty($group_ids)) {
                 </tbody>
             </table>
         <?php endif; ?>
-        <a href="dashboard.php">Back to Dashboard</a>
     </div>
 </body>
 </html>

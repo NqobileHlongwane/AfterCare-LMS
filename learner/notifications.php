@@ -46,7 +46,6 @@ $conn->query("UPDATE notifications SET is_read = 1 WHERE user_id = $learner_id")
                 <?php endforeach; ?>
             </ul>
         <?php endif; ?>
-        <a href="dashboard.php">Back to Dashboard</a>
     </div>
 </body>
 </html>

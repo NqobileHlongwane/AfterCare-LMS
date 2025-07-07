@@ -100,7 +100,6 @@ $stmt->close();
                 <?php endwhile; ?>
             </tbody>
         </table>
-        <a href="teacher_dashboard.php">Back to Dashboard</a>
     </div>
 </body>
 </html>

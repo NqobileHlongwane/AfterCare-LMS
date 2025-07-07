@@ -77,7 +77,6 @@ $stmt->close();
 <body>
     <div class="navbar">Online Learning Management System</div>
     <div class="container">
-        <a class="back-link" href="teacher_dashboard.php">&larr; Back to Dashboard</a>
         <h2>Manage Learner Groups</h2>
         <form method="post" style="margin-bottom: 24px;">
             <input type="text" name="group_name" placeholder="New group name" required style="width:70%;padding:8px;">

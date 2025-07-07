@@ -32,8 +32,6 @@ while ($row = $result->fetch_assoc()) {
         .container { max-width: 600px; margin: 40px auto; background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(30,41,59,0.10); padding: 32px 28px 24px 28px; }
         h2 { color: #1e293b; text-align: center; font-weight: 700; }
         .navbar { background: #1e293b; color: #fff; padding: 16px 0; text-align: center; font-size: 1.3rem; letter-spacing: 1px; margin-bottom: 40px; box-shadow: 0 2px 8px rgba(30,41,59,0.08); }
-        .back-link { margin-bottom: 18px; display: block; color: #6366f1; text-decoration: none; font-weight: 500; }
-        .back-link:hover { text-decoration: underline; }
         .group-list { margin-top: 24px; }
         .group-item { background: #f1f5f9; border-radius: 8px; padding: 16px 18px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(30,41,59,0.04); }
         .group-title { font-size: 1.08rem; font-weight: 700; color: #334155; }
@@ -44,7 +42,6 @@ while ($row = $result->fetch_assoc()) {
 <body>
     <div class="navbar">Online Learning Management System</div>
     <div class="container">
-        <a class="back-link" href="dashboard.php">&larr; Back to Dashboard</a>
         <h2>Your Groups</h2>
         <div class="group-list">
             <?php if ($groups): ?>

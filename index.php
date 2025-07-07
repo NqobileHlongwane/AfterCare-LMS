@@ -7,7 +7,7 @@ $role = isset($_SESSION['role']) ? $_SESSION['role'] : null;
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Online Learning Management System</title>
+    
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -20,12 +20,33 @@ $role = isset($_SESSION['role']) ? $_SESSION['role'] : null;
         .navbar {
             background: #1e293b;
             color: #fff;
-            padding: 16px 0;
+            padding: 16px 0 16px 0;
             text-align: center;
             font-size: 1.3rem;
             letter-spacing: 1px;
             margin-bottom: 40px;
             box-shadow: 0 2px 8px rgba(30,41,59,0.08);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar-logo {
+            position: absolute;
+            left: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 48px;
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 4px 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(30,41,59,0.10);
+        }
+        .navbar-logo img {
+            max-height: 48px;
+            width: auto;
         }
         .container {
             max-width: 600px;
@@ -51,7 +72,13 @@ $role = isset($_SESSION['role']) ? $_SESSION['role'] : null;
 </head>
 <body>
     <div class="navbar">
-        Online Learning Management System
+        <div class="navbar-logo">
+            <img src="logo/aftercare-logo.jpg" alt="AfterCare LMS Logo">
+        </div>
+        <span style="flex:1;text-align:center;">Online Learning Management System</span>
+        <?php if (isset($_SESSION['user_id'])): ?>
+            <a href="logout.php" style="margin-right:24px;color:#fff;font-weight:500;text-decoration:none;background:#6366f1;padding:8px 18px;border-radius:7px;transition:background 0.2s;">Logout</a>
+        <?php endif; ?>
     </div>
     <div class="container">
         <?php if ($name && $role === 'learner'): ?>

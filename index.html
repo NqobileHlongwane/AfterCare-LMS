@@ -20,6 +20,27 @@
             font-size: 1.3rem;
             letter-spacing: 1px;
             box-shadow: 0 2px 8px rgba(30,41,59,0.08);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar-logo {
+            position: absolute;
+            left: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 48px;
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 4px 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(30,41,59,0.10);
+        }
+        .navbar-logo img {
+            max-height: 48px;
+            width: auto;
         }
         .nav-links {
             display: flex;
@@ -104,7 +125,9 @@
 </head>
 <body>
     <div class="navbar">
-        Online Learning Management System
+        <div class="navbar-logo">
+            <img src="logo/aftercare-logo.jpg" alt="AfterCare LMS Logo">
+        </div>
         <div class="nav-links">
             <div class="dropdown" style="position:relative;display:inline-block;">
                 <a href="#" id="loginDropdown" onclick="event.preventDefault();document.getElementById('loginMenu').classList.toggle('show');">Login ▾</a>
@@ -118,9 +141,6 @@
         </div>
     </div>
     <div class="container">
-        <div style="text-align:center;margin-top:24px;">
-            <a href="index.php" style="color:#6366f1;font-weight:600;text-decoration:underline;font-size:1.1em;">Switch to Personalized Homepage (PHP)</a>
-        </div>
         <div class="banner-row">
             <div class="dashboard-banner" onclick="window.location.href='learner/dashboard.php'">
                 <span class="banner-icon">👩‍🎓</span>
