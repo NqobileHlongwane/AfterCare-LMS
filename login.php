@@ -51,5 +51,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
     <p><?php echo $message; ?></p>
     <p>Don't have an account? <a href="register.php">Register here</a>.</p>
+    <p><a href="forgot_password.php">Forgot your password?</a></p>
 </body>
 </html>

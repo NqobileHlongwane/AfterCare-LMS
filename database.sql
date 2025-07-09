@@ -14,7 +14,9 @@ CREATE TABLE users (
   email VARCHAR(100) UNIQUE,
   password VARCHAR(255),
   role ENUM('learner','teacher','admin'),
-  grade VARCHAR(20) NULL
+  grade VARCHAR(20) NULL,
+  password_reset_token VARCHAR(255) NULL,
+  token_expiration DATETIME NULL
 );
 
 CREATE TABLE groups (
