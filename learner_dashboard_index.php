@@ -119,4 +119,7 @@ if (!$name || $role !== 'learner') {
         <div class="coming-soon">(Dashboard features coming soon...)</div>
     </div>
 </body>
+<footer>
+    <p>&copy; 2025 Nqobile Hlongwane. All rights reserved.</p>
+  </footer>
 </html>

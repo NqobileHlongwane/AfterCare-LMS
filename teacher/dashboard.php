@@ -73,4 +73,7 @@ $name = $_SESSION['name'];
         <li>Learner Progress</li>
     </ul>
 </body>
+<footer>
+    <p>&copy; 2025 Nqobile Hlongwane. All rights reserved.</p>
+  </footer>
 </html>

@@ -48,4 +48,7 @@ $conn->query("UPDATE notifications SET is_read = 1 WHERE user_id = $learner_id")
         <?php endif; ?>
     </div>
 </body>
+<footer>
+    <p>&copy; 2025 Nqobile Hlongwane. All rights reserved.</p>
+  </footer>
 </html>

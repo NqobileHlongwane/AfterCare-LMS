@@ -106,4 +106,7 @@ $stmt->close();
         </table>
     </div>
 </body>
+<footer>
+    <p>&copy; 2025 Nqobile Hlongwane. All rights reserved.</p>
+  </footer>
 </html>
